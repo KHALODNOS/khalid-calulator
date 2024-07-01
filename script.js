@@ -93,8 +93,8 @@ function getFinalResult() {
   subjectRows.forEach((row) => {
     const final = +row.querySelector('#final').innerHTML
     const coefficient = +row.querySelector('.coefficient').value
-    coefficientsValue = coefficient
-    result = final * coefficient
+    coefficientsValue += coefficient
+    result += final * coefficient
   })
 
   finalResult = result / coefficientsValue
